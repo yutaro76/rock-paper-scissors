@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/9005a12b78.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="favicon.ico" id="favicon">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon-180x180.png">
+    <style>
+        .body{
+            width: 60%;
+            height: auto;
+            margin: auto auto;
+        }
+        .wrapper{
+            display: flex;
+            justify-content: space-between;
+        }
+        .left{
+            width:calc(100% / 3);
+        }
+        .middle{
+            width:calc(100% / 3);
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            margin: auto auto;
+        }
+        .fight{
+            width: 60%;
+            margin: auto auto;
+        }
+        .clear{
+            width: 60%;
+            margin: auto auto;
+        }
+        .right{
+            width:calc(100% / 3);
+        }
+        .you{
+            border: 1px solid black;
+            height: 50%;
+            width: auto;
+            position: relative;
+        }
+        .cpu{
+            border: 1px solid black;
+            height: 50%;
+            width: auto;
+            position: relative;
+        }
+        .options{
+            display: flex;
+            justify-content: space-between;
+        }
+        .title-you{
+            text-align: center;
+        }
+        .title-cpu{
+            text-align: center;
+        }
+        .rock{
+            opacity: 0;
+        }
+        .paper{
+            opacity: 0;
+        }
+        .scissors{
+            opacity: 0;
+        }
+        .equal{
+            opacity: 0;
+        }
+        .circle{
+            opacity: 0;
+        }
+        .xmark{
+            opacity: 0;
+        }
+        .rock-cpu{
+            opacity: 0;
+        }
+        .paper-cpu{
+            opacity: 0;
+        }
+        .scissors-cpu{
+            opacity: 0;
+        }
+        .equal-cpu{
+            opacity: 0;
+        }
+        .circle-cpu{
+            opacity: 0;
+        }
+        .xmark-cpu{
+            opacity: 0;
+        }
+        .item{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateY(-50%) translateX(-50%);
+            transform: translateY(-50%) translateX(-50%);
+            margin: auto;
+        }
+    </style>
+    <title>Rock Paper Scissors</title>
+</head>
+<body class="body">
+    <div class="wrapper">
+        <div class="left">
+            <p class="title-you">You</p>
+            <div class="you">
+                <p class="rock item"><i class="fa-solid fa-hand-fist fa"></i></p>
+                <p class="paper item"><i class="fa-solid fa-hand fa"></i></p>
+                <p class="scissors item"><i class="fa-solid fa-hand-scissors fa"></i></p>
+                <p class="equal item"><i class="fa-solid fa-equals fa"></i></p>
+                <p class="circle item"><i class="fa-solid fa-circle fa"></i></p>
+                <p class="xmark item"><i class="fa-solid fa-xmark fa"></i></p>
+            </div>
+            <div class="options">
+                <button class="rock_option"><i class="fa-solid fa-hand-fist fa"></i></button>
+                <button class="scissors_option"><i class="fa-solid fa-hand-scissors fa"></i></button>
+                <button class="paper_option"><i class="fa-solid fa-hand fa"></i></button>
+            </div>
+        </div>
+        <div class="middle">
+            <button class="fight">Fight</button>
+            <button class="clear">Clear</button>
+        </div>
+        <div class="right">
+            <p class="title-cpu">CPU</p>
+            <div class="cpu">
+                <p class="rock-cpu item"><i class="fa-solid fa-hand-fist fa"></i></p>
+                <p class="paper-cpu item"><i class="fa-solid fa-hand fa"></i></p>
+                <p class="scissors-cpu item"><i class="fa-solid fa-hand-scissors fa"></i></p>
+                <p class="equal-cpu item"><i class="fa-solid fa-equals fa"></i></p>
+                <p class="circle-cpu item"><i class="fa-solid fa-circle fa"></i></p>
+                <p class="xmark-cpu item"><i class="fa-solid fa-xmark fa"></i></p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
